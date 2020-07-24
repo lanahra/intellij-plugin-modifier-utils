@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.lanahra.modifierutils.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.lanahra.modifierutils.MyBundle
 
 class MyApplicationService {
 
