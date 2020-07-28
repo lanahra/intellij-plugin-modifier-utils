@@ -5,12 +5,13 @@ import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiRecursiveElementVisitor
 
 open class PsiInSelectionElementVisitor<T : Any>(
-        private val klass: Class<T>,
-        private val startOffset: Int,
-        private val endOffset: Int) : PsiRecursiveElementVisitor() {
+    private val klass: Class<T>,
+    private val startOffset: Int,
+    private val endOffset: Int
+) : PsiRecursiveElementVisitor() {
     companion object {
         inline operator fun <reified T : Any> invoke(startOffset: Int, endOffset: Int) =
-                PsiInSelectionElementVisitor(T::class.java, startOffset, endOffset)
+            PsiInSelectionElementVisitor(T::class.java, startOffset, endOffset)
     }
 
     internal val visitedElements: MutableList<PsiElement> = mutableListOf()

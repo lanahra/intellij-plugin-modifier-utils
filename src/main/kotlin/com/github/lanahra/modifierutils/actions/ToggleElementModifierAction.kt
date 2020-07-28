@@ -12,7 +12,6 @@ import com.intellij.psi.PsiFile
 import com.intellij.psi.PsiModifierList
 import com.intellij.psi.PsiModifierListOwner
 
-
 abstract class ToggleElementModifierAction<T : PsiElement> : AnAction() {
     abstract fun modifier(): String
 
