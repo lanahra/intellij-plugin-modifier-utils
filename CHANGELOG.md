@@ -1,7 +1,9 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# modifier-utils Changelog
+# Modifier Utils Changelog
 
-## [Unreleased]
+## [0.0.1] - 2020-07-28
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- Toggle field final modifier action (default shortcut: <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>D</kbd>, <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>D</kbd>)
+- Toggle field static modifier action (default shortcut: <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>D</kbd>, <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>S</kbd>)
+- Toggle method static modifier action (default shortcut: <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>E</kbd>, <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>S</kbd>)

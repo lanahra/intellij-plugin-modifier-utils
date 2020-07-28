@@ -1,19 +1,35 @@
 <idea-plugin>
-    <id>com.github.lanahra.modifierutils</id>
-    <name>modifier-utils</name>
-    <vendor>lanahra</vendor>
+  <id>com.github.lanahra.modifierutils</id>
+  <name>Modifier Utils</name>
+  <vendor url="https://github.com/lanahra" email="leonardonahra@gmail.com">Leonardo Nahra</vendor>
+  <version>0.0.1</version>
 
-    <!-- Product and plugin compatibility requirements -->
-    <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
-    <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.java</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.lanahra.modifierutils.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.lanahra.modifierutils.services.MyProjectService"/>
-    </extensions>
+  <idea-version since-build="193" until-build="201.*"/>
 
-    <projectListeners>
-        <listener class="com.github.lanahra.modifierutils.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </projectListeners>
+  <actions>
+    <action id="com.github.lanahra.modifierutils.actions.ToggleFieldFinalModifierAction"
+      class="com.github.lanahra.modifierutils.actions.ToggleFieldFinalModifierAction"
+      text="Toggle Field Final Modifier">
+      <add-to-group group-id="RefactoringMenu" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt shift D"
+        second-keystroke="alt shift D"/>
+    </action>
+    <action id="com.github.lanahra.modifierutils.actions.ToggleFieldStaticModifierAction"
+      class="com.github.lanahra.modifierutils.actions.ToggleFieldStaticModifierAction"
+      text="Toggle Field Static Modifier">
+      <add-to-group group-id="RefactoringMenu" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt shift D"
+        second-keystroke="alt shift S"/>
+    </action>
+    <action id="com.github.lanahra.modifierutils.actions.ToggleMethodStaticModifierAction"
+      class="com.github.lanahra.modifierutils.actions.ToggleMethodStaticModifierAction"
+      text="Toggle Method Static Modifier">
+      <add-to-group group-id="RefactoringMenu" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift alt E"
+        second-keystroke="shift alt S"/>
+    </action>
+  </actions>
 </idea-plugin>
