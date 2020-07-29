@@ -1,8 +1,7 @@
 # Intellij Plugin Modifier Utils
 
-![Build](https://github.com/lanahra/modifier-utils/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/14790.svg)](https://plugins.jetbrains.com/plugin/14790)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/14790.svg)](https://plugins.jetbrains.com/plugin/14790)
+[![Version](https://img.shields.io/jetbrains/plugin/v/14797.svg)](https://plugins.jetbrains.com/plugin/14797)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/14797.svg)](https://plugins.jetbrains.com/plugin/14797)
 
 <!-- Plugin description -->
 This plugin adds shortcuts to quickly change field or method modifiers.
