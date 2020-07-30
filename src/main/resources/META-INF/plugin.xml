@@ -2,12 +2,12 @@
   <id>com.github.lanahra.modifierutils</id>
   <name>Modifier Utils</name>
   <vendor url="https://github.com/lanahra" email="leonardonahra@gmail.com">Leonardo Nahra</vendor>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
 
   <depends>com.intellij.modules.platform</depends>
   <depends>com.intellij.modules.java</depends>
 
-  <idea-version since-build="193" until-build="201.*"/>
+  <idea-version since-build="193" until-build="202.*"/>
 
   <actions>
     <action id="com.github.lanahra.modifierutils.actions.ToggleFieldFinalModifierAction"

@@ -2,6 +2,10 @@
 
 # Modifier Utils Changelog
 
+## [0.0.2] - 2020-07-30
+### Changed
+- Plugin compatibility up to version 202.*
+
 ## [0.0.1] - 2020-07-28
 ### Added
 - Toggle field final modifier action (default shortcut: <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>D</kbd>, <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>D</kbd>)
